@@ -4,5 +4,7 @@ from . import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.DjangoForm)
+    path('', views.DjangoForm),
+    path('home/', views.home, name="homepage"),
+    path('delete/<int:roll>', views.delete_student, name="delete"),
 ]

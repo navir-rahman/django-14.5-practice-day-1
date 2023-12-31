@@ -10,6 +10,7 @@ FAVORITE_COLORS_CHOICES = [
 ]
 BIRTH_YEAR_CHOICES = ['1980', '1981', '1982']
 class base_forms(forms.Form):
+    
     name = forms.CharField(max_length=20,    required = False)
     email = forms.EmailField(label='email')
     comment = forms.CharField(widget=forms.Textarea, initial='comment ')
